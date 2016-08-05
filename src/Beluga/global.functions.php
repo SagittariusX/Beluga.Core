@@ -146,12 +146,12 @@ function strLastPos( string $str, string $needle, bool $caseless = false, string
    if ( $caseless )
    {
       // getting the caseless position
-      $idx =  \mb_strripos( $str, $needle, null, $charset );
+      $idx =  \mb_strripos( $str, $needle, 0, $charset );
    }
    else
    {
       // Getting the position depending to the case
-      $idx = \mb_strrpos( $str, $needle, null, $charset );
+      $idx = \mb_strrpos( $str, $needle, 0, $charset );
    }
 
    // if noting was found, return FALSE

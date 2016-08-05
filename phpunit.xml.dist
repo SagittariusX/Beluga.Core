@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit colors="true" bootstrap="vendor/autoload.php">
+   <testsuites>
+      <testsuite name="Beluga.Core Test Suite">
+         <directory suffix="Test.php">./tests/</directory>
+      </testsuite>
+   </testsuites>
+
+   <filter>
+      <whitelist>
+         <directory>./</directory>
+         <exclude>
+            <directory>./.idea</directory>
+            <directory>./tests</directory>
+            <directory>./vendor</directory>
+         </exclude>
+      </whitelist>
+      <!--<blacklist>
+         <exclude>
+            <file>./src/Beluga/global.php</file>
+         </exclude>
+      </blacklist>-->
+   </filter>
+</phpunit>

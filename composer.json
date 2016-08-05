@@ -16,6 +16,9 @@
    "require": {
       "php": ">=7.0"
    },
+   "require-dev": {
+      "phpunit/phpunit": "5.4.6"
+   },
    "autoload": {
       "files": [
          "src/Beluga/global.functions.php"
